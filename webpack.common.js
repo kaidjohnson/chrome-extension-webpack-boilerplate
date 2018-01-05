@@ -72,17 +72,17 @@ module.exports = (target, isProduction) => {
         }
       }]),
       new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'src/popup.html'),
+        template: path.resolve(__dirname, 'src/popup/popup.html'),
         filename: 'popup.html',
         chunks: ['popup']
       }),
       new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'src/options.html'),
+        template: path.resolve(__dirname, 'src/options/options.html'),
         filename: 'options.html',
         chunks: ['options']
       }),
       new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'src/background.html'),
+        template: path.resolve(__dirname, 'src/background/background.html'),
         filename: 'background.html',
         chunks: ['background']
       })

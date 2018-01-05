@@ -8,9 +8,9 @@ const target = 'build';
 
 module.exports = merge(common(target), {
   entry: {
-    popup: [path.resolve(__dirname, 'src/js/popup.js'), 'webpack/hot/dev-server'],
-    options: [path.resolve(__dirname, 'src/js/options.js'), 'webpack/hot/dev-server'],
-    background: [path.resolve(__dirname, 'src/js/background.js'), 'webpack/hot/dev-server'],
+    popup: [path.resolve(__dirname, 'src/popup/popup.js'), 'webpack/hot/dev-server'],
+    options: [path.resolve(__dirname, 'src/options/options.js'), 'webpack/hot/dev-server'],
+    background: [path.resolve(__dirname, 'src/background/background.js'), 'webpack/hot/dev-server'],
     devServerClient: 'webpack-dev-server/client?http://localhost:3000'
   },
   devtool: 'cheap-module-eval-source-map',

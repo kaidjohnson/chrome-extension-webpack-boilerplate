@@ -8,9 +8,9 @@ const target = 'dist';
 
 module.exports = merge(common(target, true), {
   entry: {
-    popup: path.resolve(__dirname, 'src/js/popup.js'),
-    options: path.resolve(__dirname, 'src/js/options.js'),
-    background: path.resolve(__dirname, 'src/js/background.js')
+    popup: path.resolve(__dirname, 'src/popup/popup.js'),
+    options: path.resolve(__dirname, 'src/options/options.js'),
+    background: path.resolve(__dirname, 'src/background/background.js')
   },
   devtool: 'source-map',
   plugins: [
