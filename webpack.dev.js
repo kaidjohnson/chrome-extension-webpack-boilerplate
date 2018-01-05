@@ -18,6 +18,7 @@ module.exports = merge(common(target), {
     new WriteFilePlugin()
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, target)
+    contentBase: path.resolve(__dirname, target),
+    stats: 'minimal'
   }
 });
